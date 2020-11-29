@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-position: top center;
+	background-repeat: no-repeat;
+	/* This next one is for IE6 */
+	background-attachment: fixed;
+}
+
+#flex-wrapper {
+	width: 100%; 
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+#flex-wrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 0;
+	display: block;
+}
+
+#flex-wrapper img.active { z-index: 10; }
